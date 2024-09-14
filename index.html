@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="css/Normalize.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1"></script>
+    </head>
+<body>
+    <div class="my-page">
+        <div class="sidebar">
+            <div class="top">
+                <div class="c">
+                    <i class="fa-solid fa-c"></i>
+                </div>
+                <h2>Codename.com<i class="fa-solid fa-angle-down"></i></h2>
+            </div>
+            <div class="both">
+                <div class="left">
+                    <div class="top">
+                        <i class="fa-brands fa-discord"></i>
+                        <i class="fa-brands fa-wordpress"></i>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <i class="fa-brands fa-figma"></i>
+                        <i class="fa-brands fa-algolia"></i>
+                    </div>
+                    <div class="bottom">
+                        <div class="shape">
+                            <i class="fa-solid fa-comment"></i>
+                        </div>
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="one">
+                        <p><i class="fa-regular fa-star"></i>Starred</p>
+                        <p><i class="fa-solid fa-rotate-left"></i>Recent</p>
+                        <p>Sales list</p>
+                        <p>Goals</p>
+                    </div>
+                    <div class="two">
+                        <h3>Dashboard<i class="fa-solid fa-plus icon-plus"></i></h3>
+                        <div class="main-item f-item">Codename</div>
+                        <div class="main-item s-item">Share with me
+                            <div class="sub-items">
+                                <div class="sub-item">Cargo2go</div>
+                                <div class="sub-item">Cloudz3r</div>
+                                <div class="sub-item" >Ldioma</div>
+                                <div class="sub-item">Syllables</div>
+                                <div class="sub-item">X-ob</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three">
+                        <h3>Reports<i class="fa-solid fa-plus"></i></h3>
+                        <div class="main-item f-item">Share with me
+                            <div class="sub-items">
+                                <div class="sub-item">Deals by user</div>
+                                <div class="sub-item">Deal duration</div>
+                            </div>
+                        </div>
+                        <div class="main-item s-item">My reports
+                            <div class="sub-items">
+                                <div class="sub-item">Emails received</div>
+                                <div class="sub-item">Deal duration</div>
+                                <div class="sub-item" >New report</div>
+                                <div class="sub-item ">Analytics</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="four">
+                        <i class="fa-brands fa-typo3"></i>
+                        <h4>Manage folders</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-page">
+            <header>
+                <div class="search">
+                    <input type="text" placeholder="Try searchings insights"/>
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="icons">
+                    <div class="icon">
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="plus">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </header>
+            <div class="page">
+                <div class="top">
+                    <div class="left">
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="person">
+                            <img src="./imgs/image-daniel.jpg" alt="" />
+                            <h2>Armin A</h2>
+                        </div>
+                        <div class="person">
+                            <img src="./imgs/image-jeanette.jpg" alt="" />
+                            <h2>Eren Y</h2>
+                        </div>
+                        <div class="person">
+                            <img src="./imgs/image-jonathan.jpg" alt="" />
+                            <h2>Mikasa A</h2>
+                        </div>
+                        <div class="copy">
+                            &copy;
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="icons">
+                            <div class="icon">
+                                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-arrows-spin"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <h2>New Report</h2>
+                    <div class="date">
+                        <label>
+                            <input class="toggle-checkbox" type="checkbox" checked />
+                            <div class="toggle-switch"></div>
+                        </label>
+                        <p>Timeframe</p>
+                        <details>
+                            <summary>
+                                <label for="date-input">Sep1 - Nov19 ,2023</label>
+                                <input type="date" id="date-input" name="date-input"/>
+                            </summary>
+                        </details>
+                    </div>
+                </div>
+                <div class="financial">
+                    <h3>Revenue</h3>
+                    <div class="finance">
+                        <div class="Arrow">
+                            <div class="arrow">
+                                <p>$528,976<span>.82</span></p>
+                                <div class="arrows">
+                                    <p><i class="fa-solid fa-arrows-split-up-and-left"></i>7.9%</p>
+                                    <p>$27,335<span>.09</span></p>
+                                </div>
+                            </div>
+                            <div class="arrow">
+                                <p>vs prev.$501,641.73</p>
+                                <details>
+                                    <summary>
+                                        <label for="date-input">Jun1 - Agu31 ,2023</label>
+                                        <input type="date" id="date-input" name="date-input"/>
+                                    </summary>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="sales">
+                            <div class="sale">
+                                <h4>Top sales</h4>
+                                <span>72</span>
+                                <div class="person">
+                                    <h5><img src="./imgs/image-jonathan.jpg" alt="" />Mikasa</h5>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                            <div class="deal sale">
+                                <h4>Best deal</h4>
+                                <span>$42,300</span>
+                                <h5>Rolf Inc. <i class="fa-solid fa-angle-right"></i></h5>
+                            </div>
+                            <div class="deals">
+                                <h4>Deals</h4>
+                                <span>258</span>
+                                <h5><i class="fa-solid fa-star-of-life"></i>5</h5>
+                            </div>
+                            <div class="value">
+                                <h4>Value</h4>
+                                <span>52%</span>
+                                <h5><i class="fa-solid fa-star-of-life"></i>79%</h5>
+                            </div>
+                            <div class="profit">
+                                <h4>Profit</h4>
+                                <span>44%</span>
+                                <h5><i class="fa-solid fa-star-of-life"></i>12%</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="percentage">
+                    <div class="my-person">
+                        <div class="person">
+                            <div class="image">
+                                <img src="./imgs/image-daniel.jpg" alt="" />
+                                <span>$209,633</span>
+                            </div>
+                            <h3>39.63%</h3>
+                        </div>
+                        <div class="person">
+                            <div class="image">
+                                <img src="./imgs/image-jonathan.jpg" alt="" />
+                                <span>$156,481</span>
+                            </div>
+                            <h3>29.65%</h3>
+                        </div>
+                        <div class="person">
+                            <div class="image">
+                                <img src="./imgs/image-jeanette.jpg" alt="" />
+                                <span>$117,115</span>
+                            </div>
+                            <h3>22.54%</h3>
+                        </div>
+                        <div class="copy">
+                           <div class="image">
+                           <div class="icon">
+                            &copy;
+                           </div>
+                            <span>$45,300</span>
+                           </div>
+                           <h3>38.58%</h3>
+                        </div>
+                    </div>
+                    <h4>Details</h4>
+                </div>
+                <div class="charts">
+                    <div class="chart-left">
+                        <div class="one">
+                            <div class="two">
+                                <div class="chartOne">
+                                    <div class="filter">
+                                        <div class="icons">
+                                            <i class="fa-solid fa-chart-gantt"></i>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                        <div class="filters">
+                                            <h3>Filters</h3>
+                                            <i class="fa-solid fa-angles-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="results">
+                                        <div class="dribbble">
+                                            <h4><i class="fa-brands fa-dribbble"></i>Dribbble</h4>
+                                            <div class="result">
+                                                <span>$227,459</span>
+                                                <h5>66%</h5>
+                                            </div>
+                                        </div>
+                                        <div class="dribbble">
+                                            <h4><i class="fa-brands fa-instagram"></i>Instagram</h4>
+                                            <div class="result">
+                                                <span>$142,823</span>
+                                                <h5>27%</h5>
+                                            </div>
+                                        </div>
+                                        <div class="dribbble">
+                                            <h4><i class="fa-brands fa-behance"></i>Behance</h4>
+                                            <div class="result">
+                                                <span>$89,935</span>
+                                                <h5>11%</h5>
+                                            </div>
+                                        </div>
+                                        <div class="dribbble">
+                                            <h4><i class="fa-brands fa-google"></i>Google</h4>
+                                            <div class="result">
+                                                <span>$37,028</span>
+                                                <h5>72%</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chartTwo">
+                                    <div class="filter">
+                                        <div class="icons">
+                                            <i class="fa-solid fa-chart-column"></i>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                        <div class="filters">
+                                            <h3>Filters</h3>
+                                            <i class="fa-solid fa-angles-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="results">
+                                        <div class="dribbble">
+                                            <i class="fa-brands fa-dribbble"></i>
+                                        </div>
+                                        <div class="dribbble">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </div>
+                                        <div class="dribbble">
+                                            <i class="fa-brands fa-behance"></i>
+                                        </div>
+                                        <div class="dribbble">
+                                            <i class="fa-brands fa-google"></i>
+                                        </div>
+                                        <div class="dribbble">
+                                            <i class="fa-brands fa-github"></i>
+                                        </div>
+                                    </div>
+                                    <p>Deals amount</p>
+                                    <div class="category">
+                                        <h4>By referre category</h4>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chartThree">
+                                <div class="up">
+                                    <div class="up-left">
+                                        <i class="fa-brands fa-dribbble"></i>
+                                        <div class="text">
+                                            <p>Platform value</p>
+                                            <h3>Dribbble<i class="fa-solid fa-angle-down"></i></h3>
+                                        </div>
+                                    </div>
+                                    <div class=" up-right">
+                                        <p>Revenue</p>
+                                        <p>Leads</p>
+                                        <p>W/L</p>
+                                    </div>
+                                </div>
+                                <div class="down">
+                                    <div class="left">
+                                        <h4>Average monthly</h4>
+                                        <div class="avg">
+                                            <div class="average">
+                                                <p>Revenue</p>
+                                                <h5>$18,552</h5>
+                                            </div>
+                                            <div class="average">
+                                                <p>Leads</p>
+                                                <h5>373<span>97/276</span></h5>
+                                            </div>
+                                            <div class="average">
+                                                <p>Win/Lose</p>
+                                                <h5>16%<span>51/318</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="center">
+                                        <div class="chartThree-center">
+                                            <p>$6,901</p>
+                                            <div class="three-person">
+                                                <div class="person">
+                                                    <img src="./imgs/image-daniel.jpg" alt="" />
+                                                </div>
+                                                <div class="person">
+                                                    <img src="./imgs/image-jonathan.jpg" alt="" />
+                                                </div>
+                                                <div class="person">
+                                                    <img src="./imgs/image-jeanette.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <span>Sep</span>
+                                        </div>
+                                        <div class="chartThree-center">
+                                            <p>$11,035</p>
+                                            <div class="three-person">
+                                                <div class="person">
+                                                    <img src="./imgs/image-daniel.jpg" alt="" />
+                                                </div>
+                                                <div class="person">
+                                                    <img src="./imgs/image-jonathan.jpg" alt="" />
+                                                </div>
+                                                <div class="person">
+                                                    <img src="./imgs/image-jeanette.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <span>Oct</span>
+                                        </div>
+                                        <div class="chartThree-center">
+                                            <p>$9,288</p>
+                                            <div class="three-person">
+                                                <div class="person">
+                                                    <img src="./imgs/image-daniel.jpg" alt="" />
+                                                </div>
+                                                <div class="person">
+                                                    <img src="./imgs/image-jonathan.jpg" alt="" />
+                                                </div>
+                                                <div class="person">
+                                                    <img src="./imgs/image-jeanette.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <span>Nov</span>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <p>$14,500</p>
+                                        <p>$11,000</p>
+                                        <p>$7,500</p>
+                                        <p>$4,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-right">
+                        <div class="sale">
+                            <ul>
+                                <li>Sales</li>
+                                <li>Revenue</li>
+                                <li>Streak</li>
+                                <li>27%</li>
+                                <li>68%</li>
+                            </ul>
+                        </div>
+                        <div class="percent">
+                            <div class="content">
+                                <div class="left">
+                                    <h2><img src="./imgs/image-daniel.jpg" alt="">Armin A</h2>
+                                    <p>$309,633</p>
+                                </div>
+                                <div class="center">
+                                   <div class="one">
+                                    <p class="ch-back">41</p>
+                                    <p class="ch-co">110</p>
+                                   </div>
+                                   <div class="two">
+                                    <span>0.84</span>
+                                   </div>
+                                </div>
+                                <div class="right">
+                                    <p>37%</p>
+                                    <p class="ch-back">12</p>
+                                    <p class="ch-co">29</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="person-details">
+                                <div class="content">
+                                    <div class="left">
+                                        <h2><img src="./imgs/image-jonathan.jpg" alt="" >Mikasa A</h2>
+                                        <p>$154,841</p>
+                                    </div>
+                                    <div class="center">
+                                       <div class="one">
+                                        <p class="ch-back">54</p>
+                                        <p class="ch-co">103</p>
+                                       </div>
+                                       <div class="two">
+                                        <span>0.89</span>
+                                       </div>
+                                    </div>
+                                    <div class="right">
+                                        <p>39%</p>
+                                        <p class="ch-back">21</p>
+                                        <p class="ch-co">23</p>
+                                    </div>
+                                </div>
+                                <i class="fa-brands fa-squarespace"></i>
+                            </div>
+                            <div class="review">
+                                <ul>
+                                    <li>Top sales<i class="fa-regular fa-hand-back-fist"></i></li>
+                                    <li>Sales streak<i class="fa-solid fa-fire"></i></li>
+                                    <li>Top review<i class="fa-solid fa-hand-spock"></i></li>
+                                </ul>
+                            </div>
+                            <div class="platform">
+                                <h3>Work with platforms</h3>
+                                <div class="per">
+                                    <h4><i class="fa-solid fa-angles-up"></i>3</h4>
+                                    <h4><i class="fa-solid fa-angles-up"></i>$27,445.08</h4>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="dribbble">
+                                    <h3><i class="fa-brands fa-dribbble"></i>Dribbble</h3>
+                                    <h4>45.3%<span>$71,048</span></h4>
+                                </div>
+                                <div class="media">
+                                    <div class="media-top">
+                                        <div class="instagram">
+                                            <h3><i class="fa-brands fa-instagram"></i>Instagram</h3>
+                                            <h4>38.9%<span>$44,372</span></h4>
+                                        </div>
+                                        <div class="web">
+                                            <div class="google">
+                                                <h3><i class="fa-brands fa-google"></i>Google</h3>
+                                                <h4>94.7%<span>$5,38</span></h4>
+                                            </div>
+                                            <div class="points">
+                                                <h3><i class="fa-solid fa-bowling-ball"></i>5.4%</h3>
+                                                <span>$43.22</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-bottom">
+                                        <h3><i class="fa-solid fa-unlock-keyhole"></i>Other</h3>
+                                        <h4>7.9%<span>$3.4.301</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="canvas">
+                         <div class="canv">
+                            <p>Sales dynamic<i class="fa-solid fa-arrow-trend-up"></i></p>
+                            <div class="per">
+                                <ul>
+                                    <li>w1</li>
+                                    <li>w3</li>
+                                    <li>w5</li>
+                                    <li>w7</li>
+                                    <li>w9</li>
+                                    <li>w11</li>
+                                </ul>
+                            </div>
+                            <canvas id="line-chart"  width="100%" height="50"></canvas>
+                            <div class="canv-icon">
+                                <span></span>
+                                <i class="fa-brands fa-behance"></i>
+                                <span></span>
+                                <i class="fa-brands fa-dribbble"></i>
+                                <span></span>
+                                <i class="fa-solid fa-globe"></i>
+                                <span></span>
+                            </div>
+                         </div>
+                        </div>
+                        <div class="percent">
+                            <div class="content">
+                                <div class="left">
+                                    <h2><img src="./imgs/image-jeanette.jpg" alt="">Eren Y</h2>
+                                    <p>$309,633</p>
+                                </div>
+                                <div class="center">
+                                   <div class="one">
+                                    <p class="ch-back">41</p>
+                                    <p class="ch-co">110</p>
+                                   </div>
+                                   <div class="two">
+                                    <span>0.84</span>
+                                   </div>
+                                </div>
+                                <div class="right">
+                                    <p>37%</p>
+                                    <p class="ch-back">12</p>
+                                    <p class="ch-co">29</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
